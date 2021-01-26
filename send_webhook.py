@@ -57,6 +57,8 @@ def api_root():
 # incident object (trigger, acknowledge, unacknowledge, resolve, assign, escalate,
 # delegate or annotate) when any of the above mentioned actions is performed on the
 # incident object.
+# 
+# The above incident actions are based on PagerDuty webhook v2.
 #
 @app.route('/credit_card_application', methods=['POST'])
 def api_pd_info():
